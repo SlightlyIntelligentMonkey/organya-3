@@ -9,7 +9,7 @@
 #include "Click.h"
 #include <stdio.h>
 #include "Filer.h"
-#include <string.h>
+#include <string>
 
 #include "Sound.h"
 #include "Timer.h"
@@ -51,7 +51,7 @@ extern int sACrnt;	//範囲選択は常にｶﾚﾝﾄﾄﾗｯｸ
 extern int gDrawDouble;	//両方のトラックグループを描画する
 extern CHAR app_path[];
 extern int iDragMode;
-extern SaveWithInitVolFile;
+extern int SaveWithInitVolFile;
 
 TCHAR *MessageStringBuffer = NULL;	// 2014.10.19 A
 TCHAR *MessageString[MESSAGE_STRING_MAX];

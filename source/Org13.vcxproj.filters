@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5a31a27c-a8a9-4e31-b434-21aebf39b3bf}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{a4bfdf73-fa41-4530-a4c7-7a6900572a0d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{01fedc2d-2a50-4294-bc5d-8f5a1b21fb25}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Click.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgEZCopy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTrack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Filer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gdi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainPut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrgData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrgEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrgFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrgFileMIDI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrgPlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rxoFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scroll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Script1.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Click.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefOrg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Filer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gdi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrgData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rxoFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scroll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Bitmap\button_track_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\button_track_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\button_track_3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\button_track_4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\ffff.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Head.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Left.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Loupe_MINUS.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Loupe_PLUS.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Music.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Note.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Number.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\org_back.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\org_home.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\org_next.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\org_play.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\org_stop.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Pan.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Play.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Right.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Solo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\Stop.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmap\wave100.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Wave\Bass01.wav" />
+    <Media Include="Wave\Bass02.wav" />
+    <Media Include="Wave\Bass03.wav" />
+    <Media Include="Wave\Bass04.wav" />
+    <Media Include="Wave\Bass05.wav" />
+    <Media Include="Wave\Bass06.wav" />
+    <Media Include="Wave\Bass07.wav" />
+    <Media Include="Wave\Bass08.wav" />
+    <Media Include="Wave\Bell.wav" />
+    <Media Include="Wave\cat.wav" />
+    <Media Include="Wave\Clap01.wav" />
+    <Media Include="Wave\Clash.wav" />
+    <Media Include="Wave\Crash.wav" />
+    <Media Include="Wave\Crash02.wav" />
+    <Media Include="Wave\Dram00.wav" />
+    <Media Include="Wave\Dram01.wav" />
+    <Media Include="Wave\Dram02.wav" />
+    <Media Include="Wave\Dram03.wav" />
+    <Media Include="Wave\Dram04.wav" />
+    <Media Include="Wave\Dram05.wav" />
+    <Media Include="Wave\Dram06.wav" />
+    <Media Include="Wave\Dram07.wav" />
+    <Media Include="Wave\Dram08.wav" />
+    <Media Include="Wave\Dram09.wav" />
+    <Media Include="Wave\HiClose.wav" />
+    <Media Include="Wave\HiClose03.wav" />
+    <Media Include="Wave\HiClose04.wav" />
+    <Media Include="Wave\HiClose05.wav" />
+    <Media Include="Wave\HiClose2.wav" />
+    <Media Include="Wave\HiOpen.wav" />
+    <Media Include="Wave\HiOpen03.wav" />
+    <Media Include="Wave\HiOpen04.wav" />
+    <Media Include="Wave\HiOpen2.wav" />
+    <Media Include="Wave\OrcDrm01.wav" />
+    <Media Include="Wave\Per01.wav" />
+    <Media Include="Wave\Per02.wav" />
+    <Media Include="Wave\Pesi01.wav" />
+    <Media Include="Wave\Quick01.wav" />
+    <Media Include="Wave\RevSym01.wav" />
+    <Media Include="Wave\Ride01.wav" />
+    <Media Include="Wave\Snare01.wav" />
+    <Media Include="Wave\Snare02.wav" />
+    <Media Include="Wave\Snare03.wav" />
+    <Media Include="Wave\Snare04.wav" />
+    <Media Include="Wave\Snare05.wav" />
+    <Media Include="Wave\Snare06.wav" />
+    <Media Include="Wave\Snare07.wav" />
+    <Media Include="Wave\Snare08.wav" />
+    <Media Include="Wave\Tom01.wav" />
+    <Media Include="Wave\Tom02.wav" />
+    <Media Include="Wave\Tom03.wav" />
+    <Media Include="Wave\Tom04.wav" />
+    <Media Include="Wave\Tom05.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="help.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Bitmap\cursor.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Bitmap\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="help.html" />
+    <CustomBuild Include="Wave\Wave.dat" />
+  </ItemGroup>
+</Project>

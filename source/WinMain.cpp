@@ -18,7 +18,7 @@
 #define CDCD_LOAD 2
 
 
-#include <windows.h>
+#include <Windows.h>
 #include <winuser.h>
 
 #include "Setting.h"
@@ -30,7 +30,7 @@
 #include "Mouse.h"
 #include "Click.h"
 #include <stdio.h>
-#include <string.h>
+#include <string>
 #include "Filer.h"
 #include "rxoFunction.h"
 
@@ -85,7 +85,7 @@ extern int sACrnt;	//範囲選択は常にｶﾚﾝﾄﾄﾗｯｸ
 extern void ChangeTrack(HWND hdwnd, int iTrack);
 extern void ChangeTrackPlus(HWND hdwnd, int iValue);
 extern char timer_sw; //演奏中？
-extern EZCopyWindowState; //イージーコピーの状態
+extern int EZCopyWindowState; //イージーコピーの状態
 extern void ClearEZC_Message(); //EZメッセージと範囲を消す
 extern RECT CmnDialogWnd;
 extern int SaveWithInitVolFile;	//曲データと…セーブするか。

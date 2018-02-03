@@ -5,7 +5,7 @@
 //Contents : 「マルチメディアタイマーの使用方法」
 //
 
-#include <windows.h>  //Win32n API's
+#include <Windows.h>
 #include <windowsx.h> //mmsystem.h
 #include "DefOrg.h"
 #include "OrgData.h"

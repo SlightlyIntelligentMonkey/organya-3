@@ -1,6 +1,5 @@
 #include <windows.h>
 #include <stdio.h>
-#include <dplay.h>
 #include <dsound.h>
 #include "Setting.h"
 #include "DefOrg.h"

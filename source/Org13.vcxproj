@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{94440E2F-A7D8-4319-A7C9-B8DBCFB0E358}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\Org13.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Org13.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Org13.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>Debug/Org140.exe</OutputFile>
+      <AdditionalDependencies>dsound.lib;winmm.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\Org13.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Org13.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Org13.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>Release/Org211.exe</OutputFile>
+      <AdditionalDependencies>dsound.lib;ddraw.lib;winmm.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Click.cpp" />
+    <ClCompile Include="DlgEdit.cpp" />
+    <ClCompile Include="DlgEZCopy.cpp" />
+    <ClCompile Include="DlgPlayer.cpp" />
+    <ClCompile Include="DlgSet.cpp" />
+    <ClCompile Include="DlgTrack.cpp" />
+    <ClCompile Include="Filer.cpp" />
+    <ClCompile Include="Gdi.cpp" />
+    <ClCompile Include="MainPut.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="OrgData.cpp" />
+    <ClCompile Include="OrgEdit.cpp" />
+    <ClCompile Include="OrgFile.cpp" />
+    <ClCompile Include="OrgFileMIDI.cpp" />
+    <ClCompile Include="OrgPlay.cpp" />
+    <ClCompile Include="rxoFunction.cpp" />
+    <ClCompile Include="Scroll.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="WinTimer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Script1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Click.h" />
+    <ClInclude Include="DefOrg.h" />
+    <ClInclude Include="Filer.h" />
+    <ClInclude Include="Gdi.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="OrgData.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="rxoFunction.h" />
+    <ClInclude Include="Scroll.h" />
+    <ClInclude Include="Setting.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Bitmap\button_track_1.bmp" />
+    <Image Include="Bitmap\button_track_2.bmp" />
+    <Image Include="Bitmap\button_track_3.bmp" />
+    <Image Include="Bitmap\button_track_4.bmp" />
+    <Image Include="Bitmap\ffff.ico" />
+    <Image Include="Bitmap\Head.bmp" />
+    <Image Include="Bitmap\icon1.ico" />
+    <Image Include="Bitmap\Left.bmp" />
+    <Image Include="Bitmap\Loupe_MINUS.bmp" />
+    <Image Include="Bitmap\Loupe_PLUS.bmp" />
+    <Image Include="Bitmap\Music.bmp" />
+    <Image Include="Bitmap\Note.bmp" />
+    <Image Include="Bitmap\Number.bmp" />
+    <Image Include="Bitmap\org_back.bmp" />
+    <Image Include="Bitmap\org_home.bmp" />
+    <Image Include="Bitmap\org_next.bmp" />
+    <Image Include="Bitmap\org_play.bmp" />
+    <Image Include="Bitmap\org_stop.bmp" />
+    <Image Include="Bitmap\Pan.bmp" />
+    <Image Include="Bitmap\Play.bmp" />
+    <Image Include="Bitmap\Right.bmp" />
+    <Image Include="Bitmap\Solo.bmp" />
+    <Image Include="Bitmap\Stop.bmp" />
+    <Image Include="Bitmap\wave100.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Bitmap\cursor.cur" />
+    <CustomBuild Include="Bitmap\cursor1.cur" />
+    <CustomBuild Include="help.html" />
+    <CustomBuild Include="Wave\Wave.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Wave\Bass01.wav" />
+    <Media Include="Wave\Bass02.wav" />
+    <Media Include="Wave\Bass03.wav" />
+    <Media Include="Wave\Bass04.wav" />
+    <Media Include="Wave\Bass05.wav" />
+    <Media Include="Wave\Bass06.wav" />
+    <Media Include="Wave\Bass07.wav" />
+    <Media Include="Wave\Bass08.wav" />
+    <Media Include="Wave\Bell.wav" />
+    <Media Include="Wave\cat.wav" />
+    <Media Include="Wave\Clap01.wav" />
+    <Media Include="Wave\Clash.wav" />
+    <Media Include="Wave\Crash.wav" />
+    <Media Include="Wave\Crash02.wav" />
+    <Media Include="Wave\Dram00.wav" />
+    <Media Include="Wave\Dram01.wav" />
+    <Media Include="Wave\Dram02.wav" />
+    <Media Include="Wave\Dram03.wav" />
+    <Media Include="Wave\Dram04.wav" />
+    <Media Include="Wave\Dram05.wav" />
+    <Media Include="Wave\Dram06.wav" />
+    <Media Include="Wave\Dram07.wav" />
+    <Media Include="Wave\Dram08.wav" />
+    <Media Include="Wave\Dram09.wav" />
+    <Media Include="Wave\HiClose.wav" />
+    <Media Include="Wave\HiClose03.wav" />
+    <Media Include="Wave\HiClose04.wav" />
+    <Media Include="Wave\HiClose05.wav" />
+    <Media Include="Wave\HiClose2.wav" />
+    <Media Include="Wave\HiOpen.wav" />
+    <Media Include="Wave\HiOpen03.wav" />
+    <Media Include="Wave\HiOpen04.wav" />
+    <Media Include="Wave\HiOpen2.wav" />
+    <Media Include="Wave\OrcDrm01.wav" />
+    <Media Include="Wave\Per01.wav" />
+    <Media Include="Wave\Per02.wav" />
+    <Media Include="Wave\Pesi01.wav" />
+    <Media Include="Wave\Quick01.wav" />
+    <Media Include="Wave\RevSym01.wav" />
+    <Media Include="Wave\Ride01.wav" />
+    <Media Include="Wave\Snare01.wav" />
+    <Media Include="Wave\Snare02.wav" />
+    <Media Include="Wave\Snare03.wav" />
+    <Media Include="Wave\Snare04.wav" />
+    <Media Include="Wave\Snare05.wav" />
+    <Media Include="Wave\Snare06.wav" />
+    <Media Include="Wave\Snare07.wav" />
+    <Media Include="Wave\Snare08.wav" />
+    <Media Include="Wave\Tom01.wav" />
+    <Media Include="Wave\Tom02.wav" />
+    <Media Include="Wave\Tom03.wav" />
+    <Media Include="Wave\Tom04.wav" />
+    <Media Include="Wave\Tom05.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="help.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

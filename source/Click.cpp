@@ -4,7 +4,7 @@
 #include "Mouse.h"
 #include "Scroll.h"
 #include <stdio.h>//sprintfテスト用
-#include <string.h>//sprintfテスト用
+#include <string>//sprintfテスト用
 #include "rxoFunction.h"
 #include "resource.h"
 

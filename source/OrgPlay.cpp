@@ -39,7 +39,7 @@ void OrgData::PlayData(void)
 		if(now_leng[i] > 0)now_leng[i]--;
 	}
 	//ƒhƒ‰ƒ€‚ÌÄ¶
-	for(i = MAXMELODY; i < MAXTRACK; i++){
+	for(int i = MAXMELODY; i < MAXTRACK; i++){
 		if(np[i] != NULL &&play_p == np[i]->x ){//‰¹‚ª—ˆ‚½B
 			if(np[i]->y != KEYDUMMY){//‚È‚ç‚·
 				if(mute[i] == 0)PlayDramObject(np[i]->y,1,i-MAXMELODY);
