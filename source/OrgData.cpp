@@ -60,6 +60,7 @@ void OrgData::GetMusicInfo(MUSICINFO *mi){
 		mi->tdata[i].wave_no = info.tdata[i].wave_no;
 		mi->tdata[i].pipi = info.tdata[i].pipi;
 	}
+	return;
 }
 bool OrgData::PutBackGround(void)
 {
@@ -132,7 +133,8 @@ NOTELIST *OrgData::SearchNote(NOTELIST *np)
 //音符を配置(左クリックの処理)
 void OrgData::TouchKeyboard(unsigned char y)
 {
-	PlayOrganKey(y,track,info.tdata[track].freq,320);//■
+	PlayOrganKey(y,track,info.tdata[track].freq,320);
+	return;
 }
 BOOL OrgData::SetNote(long x,unsigned char y, int DragMode)
 {
@@ -686,6 +688,7 @@ void OrgData::InitOrgData(void)
 	for(i = MAXMELODY; i < MAXTRACK; i++){
 		InitDramObject(dram_name[ info.tdata[i].wave_no ],i-MAXMELODY);
 	}
+	return;
 }
 void OrgData::GetNoteUsed(long *use,long*left,char track)
 {
@@ -702,6 +705,7 @@ void OrgData::GetNoteUsed(long *use,long*left,char track)
 	}
 	*use = u;
 	*left = l;
+	return;
 }
 OrgData::OrgData()
 {
@@ -716,10 +720,12 @@ OrgData::OrgData()
 	RedoEnable = false;
 	UndoEnable = false;
 	//noteon = new unsigned char[65536];
+	return;
 }
 OrgData::~OrgData() //デストラクタ
 {
 	//delete [] noteon;
+	return;
 }
 
 
@@ -754,6 +760,7 @@ void OrgData::ClearUndoData()
 	MaximumUndoCursor = 0;
 	RedoEnable = false;
 	UndoEnable = false;
+	return;
 }
 
 //アンドゥから復帰
@@ -800,7 +807,6 @@ int OrgData::ReplaceFromRedoData()
 		memcpy(info.tdata[j].note_p , &ud_note[cc][j] ,  sizeof(NOTELIST)*4096);
 	}
 	return r;
-
 }
 
 
@@ -815,7 +821,6 @@ int OrgData::ResetLastUndo()
 		UndoEnable = false;
 	}
 	return r;
-
 }
 
 //最後の判定をしない
@@ -873,6 +878,5 @@ BOOL OrgData::SetNote_afterSetLength(long x)
 
 	}
 	return TRUE;
-
 }
 

@@ -36,6 +36,7 @@
 
 #include "Sound.h"
 #include "Timer.h"
+#include "Gdi.h"
 
 //メインプロシージャ
 LRESULT CALLBACK WndProc(HWND hwnd,UINT message,WPARAM wParam,LPARAM lParam);
@@ -158,13 +159,13 @@ int CancelDeleteCurrentData(int iMessagePattern = 1){
 	return 0;
 }
 
-int APIENTRY WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPTSTR dropfile,int nCmdShow)
-{//メイン関数
-	MSG msg;//このアプリが使うパラメータ	
+int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR dropfile, int nCmdShow)
+{
+	MSG msg;
 	WNDCLASSEX wc;
-//	MessageBox(hWnd,dropfile,"Drap",MB_OK);
-	InitMMTimer();  // 2010.09.21
-	strSize[0]=0;	// 2010.08.14 A
+
+	InitMMTimer();
+	strSize[0]=0;
 	for(int jjj=0;jjj<128;jjj++)iKeyPhase[jjj]=-1;
 	iCurrentPhase=0;
 	iPushShift[0]=0;
@@ -175,51 +176,51 @@ int APIENTRY WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPTSTR dropfile
 		iKeyPushDown[vvv]=0;
 	}
 
-	//メッセージ用ストリングをロードする
 	AllocMessageStringBuffer();
 
-	//初期ファイル名
+
 	strcpy(music_file, MessageString[IDS_DEFAULT_ORG_FILENAME]);
 
 	iCast['Z']= 33;
 	iCast['S']= 34;
 	iCast['X']= 35;
-	iCast['C']= 36; //C … Cの音
+	iCast['C']= 36;
 	iCast['F']= 37;
-	iCast['V']= 38; //     D
+	iCast['V']= 38;
 	iCast['G']= 39;
-	iCast['B']= 40; //     E
-	iCast['N']= 41; //     F
+	iCast['B']= 40;
+	iCast['N']= 41;
 	iCast['J']= 42;
-	iCast['M']= 43; //     G
+	iCast['M']= 43;
 	iCast['K']= 44;
-	iCast[0xBC]=45; //,    A
+	iCast[0xBC]=45;
 	iCast['L']= 46;
-	iCast[0xBE]=47; //.    B
-	iCast[0xBF]=48; //／   C
-	iCast[0xBA]=49; //:
-	iCast[0xE2]=50; //￥
-	iCast[0xDD]=51; //]
+	iCast[0xBE]=47;
+	iCast[0xBF]=48;
+	iCast[0xBA]=49;
+	iCast[0xE2]=50;
+	iCast[0xDD]=51;
+
 	strMIDIFile = (char *)malloc(MAX_PATH);
 
-	HACCEL Ac; //ショートカットキー用
+	HACCEL Ac;
 
 	LoadString(GetModuleHandle(NULL), IDS_TITLE, lpszName, sizeof(lpszName) / sizeof(lpszName[0]));
 
 	wc.cbSize        = sizeof(WNDCLASSEX);
-	wc.style         = 0;//CS_DBLCLKS| CS_OWNDC;//アプリケーションのスタイル
+	wc.style         = 0;//CS_DBLCLKS| CS_OWNDC;
 	wc.lpfnWndProc   = (WNDPROC)WndProc;
 	wc.cbClsExtra    = 0;
 	wc.cbWndExtra    = 0;
 	wc.hInstance     = hInst = hInstance;
-	wc.hIcon         = LoadIcon(hInst,"ICON");//大きいアイコン
-	wc.hIconSm       = LoadIcon(hInst,"ICON");//小さいアイコン
-	wc.hCursor       = LoadCursor(hInst,"CURSOR");//カーソル
-	wc.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);//ウインドウの気本色
-	wc.lpszMenuName  = "ORGANYAMENU";//メニ	ュー
+	wc.hIcon         = LoadIcon(hInst,"ICON");
+	wc.hIconSm       = LoadIcon(hInst,"ICON");
+	wc.hCursor       = LoadCursor(hInst,"CURSOR");
+	wc.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
+	wc.lpszMenuName  = "ORGANYAMENU";
 	wc.lpszClassName = lpszName;
 
-	int wnd_width;///ここでWindowの広さを指定します。
+	int wnd_width;
 	int wnd_height;
 	gWidthWindow = wnd_width = GetSystemMetrics(SM_CXFRAME)*2+//フレームの幅
 		GetSystemMetrics(SM_CXHSCROLL)+//スクロールバーの幅
@@ -273,8 +274,8 @@ int APIENTRY WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPTSTR dropfile
 			"オルガーニャ",//表示される"名前"
 			ul,
 			//WS_CAPTION|WS_MINIMIZEBOX|WS_SYSMENU|WS_THICKFRAME|WS_MAXIMIZEBOX,
-//            WS_CAPTION|WS_VISIBLE|WS_SYSMENU,//ウィンドウのスタイル
-/*
+			//WS_CAPTION|WS_VISIBLE|WS_SYSMENU,//ウィンドウのスタイル
+			/*
             32,//WindowのX
 			32,//WindowのY
             wnd_width,//幅
@@ -409,8 +410,8 @@ int APIENTRY WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPTSTR dropfile
 				if(!IsDialogMessage(hDlgTrack,&msg)){
 					if(!IsDialogMessage(hDlgEZCopy,&msg)){
 						if(!IsDialogMessage(hDlgHelp,&msg)){
-							TranslateMessage(&msg);//キーボード使用可能
-							DispatchMessage(&msg);//制御をWindowsに戻す
+							TranslateMessage(&msg);
+							DispatchMessage(&msg);
 						}
 					}				
 				}
@@ -419,10 +420,12 @@ int APIENTRY WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPTSTR dropfile
 				//DispatchMessage(&msg);
         }
 	}
-	//MessageBox(NULL, "メッセージループを抜けました", "OK", MB_OK);
 
+	//exit code
+
+	//MessageBox(NULL, "Exiting", "OK", MB_OK);
 	DestroyAcceleratorTable (Ac);
-	return msg.wParam;//ここでアプリケーションは終了
+	return msg.wParam;
 }
 //メインプロシージャ
 LRESULT CALLBACK WndProc(HWND hwnd,UINT message,WPARAM wParam,LPARAM lParam)

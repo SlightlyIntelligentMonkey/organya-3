@@ -1,5 +1,5 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Developer Studio generated include file.
+// Microsoft Visual C++ generated include file.
 // Used by Script1.rc
 //
 #define IDS_STRING1                     1
@@ -664,13 +664,14 @@
 #define IDM_NOTE_ENLARGE                40286
 #define IDM_PRESSNOTE                   40287
 #define ID_AC_PRESSNOTE                 40288
+#define ID_AC_PLAY_PAUSE                40289
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        236
-#define _APS_NEXT_COMMAND_VALUE         40289
+#define _APS_NEXT_RESOURCE_VALUE        240
+#define _APS_NEXT_COMMAND_VALUE         40291
 #define _APS_NEXT_CONTROL_VALUE         1213
 #define _APS_NEXT_SYMED_VALUE           101
 #endif

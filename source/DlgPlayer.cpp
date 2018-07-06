@@ -29,7 +29,8 @@ int mute_name[MAXTRACK] = {
 	IDC_MUTE15,
 };
 //簡単なダイアログ関数
-BOOL CALLBACK DialogPlayer(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lParam){
+BOOL CALLBACK DialogPlayer(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lParam)
+{
 	int i;
 	HMENU hmenu,hsubmenu;
 	MUSICINFO mi;
@@ -37,6 +38,7 @@ BOOL CALLBACK DialogPlayer(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lPara
 	HWND  hCtrlWnd;
 	long hp,vp;
 	char str[32];
+
 	switch(message){
 	case WM_INITDIALOG://ダイアログが呼ばれた
 		HANDLE hBmp;
@@ -218,5 +220,6 @@ BOOL CALLBACK DialogPlayer(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lPara
 		//DeleteObject(hFont1); //フォントオブジェクトの削除
 		return 1;
 	}
+
 	return 0;
 }
